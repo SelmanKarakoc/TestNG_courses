@@ -15,7 +15,7 @@ public class C06_SoftAssert {
     @Test
     public void webappTest(){
         // 1. “http://zero.webappsecurity.com/” Adresine gidin
-        Driver.getDriver().get("https://zero.webappsecurity.com/");
+        Driver.getDriver().get("http://zero.webappsecurity.com/");
 
         // 2. Sign in butonuna basin
         ZeroPage zeroPage=new ZeroPage();
@@ -28,7 +28,7 @@ public class C06_SoftAssert {
         zeroPage.passwordKutusu.sendKeys("password");
 
         // 5. Sign in tusuna basin
-        zeroPage.signInButonu.click();
+        zeroPage.signInSubmitButonu.click();
 
         //  navigateBack yapin
         Driver.getDriver().navigate().back();

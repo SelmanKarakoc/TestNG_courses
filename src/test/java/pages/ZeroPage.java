@@ -19,7 +19,7 @@ public class ZeroPage {
     @FindBy(id = "user_password")
     public WebElement passwordKutusu;
 
-    @FindBy(xpath = "//input[@value='Sign in']")
+    @FindBy(xpath = "//input[@name='submit']")
     public WebElement signInSubmitButonu;
 
     @FindBy(xpath = "//strong[text()='Online Banking']")
